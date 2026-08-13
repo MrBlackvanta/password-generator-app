@@ -1,9 +1,4 @@
-import {
-  cn,
-  STRENGTH_LABELS,
-  STRENGTH_LEVELS,
-  type StrengthLevel,
-} from "@/lib";
+import { STRENGTH_LABELS, STRENGTH_LEVELS, type StrengthLevel } from "@/lib";
 
 const BAR_FILLS: Record<StrengthLevel, string> = {
   "too-weak": "bg-strength-too-weak",
@@ -33,10 +28,7 @@ export default function StrengthMeter({
           {STRENGTH_LEVELS.map((step, index) => (
             <span
               key={step}
-              className={cn(
-                "h-7 w-2.5",
-                index < filled ? fill : "border-2 border-ink",
-              )}
+              className={`h-7 w-2.5 ${index < filled ? fill : "border-2 border-ink"}`}
             />
           ))}
         </div>
