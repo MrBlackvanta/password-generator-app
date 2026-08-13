@@ -3,7 +3,29 @@
 @theme {
   --color-page-top: #14131b;
   --color-page-bottom: #08070b;
+
+  --color-surface: #24232c;
+  --color-well: #18171f;
+
   --color-ink: #e6e5ea;
+  --color-ink-muted: #827e92;
+  --color-ink-placeholder: #8a8a94;
+
+  --color-accent: #a4ffaf;
+
+  --color-strength-too-weak: #f64a4a;
+  --color-strength-weak: #fb7c58;
+  --color-strength-medium: #f8cd65;
+  --color-strength-strong: var(--color-accent);
+
+  --text-heading-lg: 2rem;
+  --text-heading-lg--line-height: 2.625rem;
+  --text-heading: 1.5rem;
+  --text-heading--line-height: 2rem;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1.5rem;
+  --text-body-sm: 1rem;
+  --text-body-sm--line-height: 1.3125rem;
 }
 
 @theme inline {
@@ -23,4 +45,8 @@
   button:not(:disabled) {
     @apply cursor-pointer;
   }
+}
+
+@utility v-focus-ring {
+  @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
 }
