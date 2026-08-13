@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page-top: #14131b;
+  --color-page-bottom: #08070b;
+  --color-ink: #e6e5ea;
+}
+
+@theme inline {
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@layer base {
+  body {
+    @apply font-mono font-bold text-ink;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-page-top),
+      var(--color-page-bottom)
+    );
+    background-color: var(--color-page-bottom);
+  }
+  button:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
