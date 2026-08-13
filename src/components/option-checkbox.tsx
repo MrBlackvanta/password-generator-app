@@ -20,7 +20,7 @@ export default function OptionCheckbox({
           onChange={(event) => onChange(event.target.checked)}
           className="peer absolute inset-0 size-5 appearance-none border-2 border-ink v-focus-ring transition-colors group-hover:border-accent checked:border-0 checked:bg-accent motion-reduce:transition-none"
         />
-        <CheckIcon className="pointer-events-none invisible h-3 w-3.5 text-well peer-checked:visible" />
+        <CheckIcon className="pointer-events-none invisible relative h-3 w-3.5 text-well peer-checked:visible" />
       </span>
       <span className="text-body-sm md:text-body">{label}</span>
     </label>
