@@ -26,6 +26,10 @@
   --text-body--line-height: 1.5rem;
   --text-body-sm: 1rem;
   --text-body-sm--line-height: 1.3125rem;
+  --text-note: 0.75rem;
+  --text-note--line-height: 1.5;
+
+  --container-card: 33.75rem;
 }
 
 @theme inline {
@@ -49,4 +53,67 @@
 
 @utility v-focus-ring {
   @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+}
+
+@utility v-footer-link {
+  @apply underline v-focus-ring transition-colors hover:text-ink motion-reduce:transition-none;
+}
+
+@utility v-tap-target {
+  @apply relative after:absolute after:-inset-2 after:content-[''];
+}
+
+@utility v-btn {
+  @apply flex h-14 items-center justify-center gap-4 border-2 border-transparent text-body-sm v-focus-ring transition-colors md:h-16.25 md:gap-6 md:text-body;
+  @apply bg-accent text-surface disabled:opacity-50 motion-reduce:transition-none;
+  @apply enabled:hover:border-accent enabled:hover:bg-transparent enabled:hover:text-accent;
+}
+
+@utility v-slider {
+  @apply h-7 w-full cursor-pointer appearance-none bg-transparent focus-visible:outline-none;
+
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent) 0 var(--fill, 0%),
+    var(--color-well) var(--fill, 0%) 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 0.5rem;
+
+  &::-webkit-slider-thumb {
+    @apply size-7 appearance-none rounded-full bg-ink;
+  }
+
+  &::-moz-range-thumb {
+    @apply size-7 rounded-full border-0 bg-ink;
+  }
+
+  &::-moz-range-track {
+    @apply bg-transparent;
+  }
+
+  &:hover::-webkit-slider-thumb {
+    @apply bg-well;
+    box-shadow: 0 0 0 2px var(--color-accent);
+  }
+
+  &:hover::-moz-range-thumb {
+    @apply bg-well;
+    box-shadow: 0 0 0 2px var(--color-accent);
+  }
+
+  &:focus-visible::-webkit-slider-thumb {
+    @apply bg-well;
+    box-shadow:
+      0 0 0 2px var(--color-well),
+      0 0 0 4px var(--color-accent);
+  }
+
+  &:focus-visible::-moz-range-thumb {
+    @apply bg-well;
+    box-shadow:
+      0 0 0 2px var(--color-well),
+      0 0 0 4px var(--color-accent);
+  }
 }
