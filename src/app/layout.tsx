@@ -12,7 +12,7 @@ const jetBrainsMono = JetBrains_Mono({
 const title = "Password generator app";
 const description =
   "Generate a strong random password, rate its strength and copy it to your clipboard — a Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://vanta-password-generator-app.netlify.app";
+const siteUrl = "https://password-generator-app.abdelrhman-ahmed8881.workers.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -21,7 +21,8 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/password-generator-app)
-- Live Site URL: [Netlify](https://vanta-password-generator-app.netlify.app)
+- Live Site URL: [Cloudflare](https://password-generator-app.abdelrhman-ahmed8881.workers.dev)
+- Mirror: [Netlify](https://vanta-password-generator-app.netlify.app)
 
 ## My process
 
