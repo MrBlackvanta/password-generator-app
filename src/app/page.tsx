@@ -12,7 +12,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="px-4 pt-4 pb-0.5 text-center text-note text-ink-muted">
+      <footer className="absolute inset-x-0 bottom-0 px-4 pb-0.5 text-center text-note text-ink-muted">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"

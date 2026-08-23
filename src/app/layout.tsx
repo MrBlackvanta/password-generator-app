@@ -12,7 +12,8 @@ const jetBrainsMono = JetBrains_Mono({
 const title = "Password generator app";
 const description =
   "Generate a strong random password, rate its strength and copy it to your clipboard — a Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl = "https://password-generator-app.abdelrhman-ahmed8881.workers.dev";
+const siteUrl =
+  "https://password-generator-app.abdelrhman-ahmed8881.workers.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -47,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${jetBrainsMono.variable} antialiased`}>
-      <body className="flex min-h-dvh flex-col">{children}</body>
+      <body className="relative flex min-h-dvh flex-col">{children}</body>
     </html>
   );
 }
