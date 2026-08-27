@@ -22,7 +22,6 @@ This is a solution to the [Password generator app challenge on Frontend Mentor](
 
 - Solution URL: [GitHub](https://github.com/MrBlackvanta/password-generator-app)
 - Live Site URL: [Cloudflare](https://password-generator-app.abdelrhman-ahmed8881.workers.dev)
-- Mirror: [Netlify](https://vanta-password-generator-app.netlify.app)
 
 ## My process
 
@@ -171,6 +170,6 @@ main frame's `10` fills that same box exactly. Both are duplication artefacts, n
 
 ## Author
 
-- UpWork - [Abdelrhman Abdelaal](https://upwork.com/freelancers/~01f0a9479696b61f49)
+- UpWork - [Abdelrhman Abdelaal](https://www.upwork.com/freelancers/mrblackvanta)
 - Frontend Mentor - [@MrBlackvanta](https://www.frontendmentor.io/profile/MrBlackvanta)
 - LinkedIn - [Abdelrhman Abdelaal](https://www.linkedin.com/in/abdelrhman-vanta/)
