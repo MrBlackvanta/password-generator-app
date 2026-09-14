@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import { siteUrl } from "@/app/site";
 import "./globals.css";
 
 const jetBrainsMono = JetBrains_Mono({
@@ -11,10 +12,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 const title = "Password generator app";
 const description =
-  "Generate a strong random password, rate its strength and copy it to your clipboard — a Frontend Mentor challenge built with Next.js, TypeScript, and Tailwind CSS.";
-const siteUrl =
-  "https://password-generator-app.abdelrhman-ahmed8881.workers.dev";
-
+  "Generate a strong random password, rate its strength and copy it to your clipboard.";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
